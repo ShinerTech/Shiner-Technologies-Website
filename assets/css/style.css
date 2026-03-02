@@ -1,0 +1,365 @@
+/* Modern Professional Theme for Shiner Technologies */
+
+:root {
+    /* Color Palette */
+    --primary-color: #0f172a;
+    /* Deep Blue */
+    --primary-light: #1e293b;
+    --background-color: #f8fafc;
+    /* Light Gray */
+    --surface-color: #ffffff;
+    /* White */
+    --text-color: #334155;
+    /* Slate 700 */
+    --text-light: #64748b;
+    /* Slate 500 */
+    --accent-color: #0ea5e9;
+    /* Sky Blue */
+    --accent-hover: #0284c7;
+    --accent-secondary: #f97316;
+    /* Orange */
+    --border-color: #e2e8f0;
+
+    /* Typography */
+    --font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    --heading-font-weight: 700;
+    --body-font-size: 16px;
+    --line-height: 1.6;
+
+    /* Spacing */
+    --spacing-xs: 0.5rem;
+    --spacing-sm: 1rem;
+    --spacing-md: 1.5rem;
+    --spacing-lg: 2rem;
+    --spacing-xl: 3rem;
+
+    /* Shadows & Radius */
+    --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+    --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+    --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+    --radius-md: 0.5rem;
+    --radius-lg: 0.75rem;
+}
+
+/* Global Reset & Base Styles */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font-family);
+    color: var(--text-color);
+    background-color: var(--background-color);
+    line-height: var(--line-height);
+    font-size: var(--body-font-size);
+    margin: 0;
+    padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: var(--primary-color);
+    font-weight: var(--heading-font-weight);
+    line-height: 1.2;
+    margin-bottom: var(--spacing-sm);
+}
+
+a {
+    color: var(--accent-color);
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+a:hover {
+    color: var(--accent-hover);
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: var(--radius-md);
+}
+
+/* Layout Utilities */
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 var(--spacing-md);
+}
+
+/* Header Overrides */
+#header {
+    background-color: var(--surface-color) !important;
+    box-shadow: var(--shadow-md);
+    padding: var(--spacing-sm) 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+#logo h1.site-title {
+    font-size: 1.5rem !important;
+    color: var(--primary-color) !important;
+    margin: 0;
+}
+
+#logo h2.site-description {
+    font-size: 0.875rem !important;
+    color: var(--text-light) !important;
+    font-weight: 400;
+}
+
+/* Navigation Overrides */
+.main-navigation ul.menu li a {
+    color: var(--text-color) !important;
+    font-weight: 600 !important;
+    padding: 0.5rem 1rem !important;
+    /* Slightly more padding */
+    border-radius: 20px !important;
+    /* Pill shape */
+    transition: all 0.3s ease;
+}
+
+.main-navigation ul.menu li a:hover,
+.main-navigation ul.menu li a.current,
+/* Targeting the class added directly to link */
+.main-navigation ul.menu li.current-menu-item a,
+/* WordPress class */
+.main-navigation ul.menu li.current_page_item a {
+    /* WordPress class */
+    color: var(--accent-secondary) !important;
+    /* Orange text */
+    background-color: rgba(249, 115, 22, 0.1) !important;
+    /* Subtle orange background */
+}
+
+/* Logo Row for Product Cards */
+.logo-row {
+    display: flex;
+    gap: 1.5rem;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1.5rem;
+    flex-wrap: wrap;
+    /* Allow wrapping */
+}
+
+.logo-row img {
+    max-height: 40px;
+    width: auto;
+    object-fit: contain;
+    /* Removed grayscale/opacity as requested */
+    transition: all 0.3s ease;
+}
+
+.logo-row img:hover {
+    filter: grayscale(0%);
+    opacity: 1;
+    transform: scale(1.1);
+}
+
+
+
+
+
+/* Hero/Slider Overrides */
+#slider {
+    margin-bottom: var(--spacing-xl);
+}
+
+/* Button Overrides */
+.wp-block-button__link,
+.themebutton,
+button,
+input[type="submit"] {
+    display: inline-block;
+    background-color: var(--accent-color) !important;
+    color: #ffffff !important;
+    padding: 0.75rem 1.5rem !important;
+    border-radius: var(--radius-lg) !important;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    box-shadow: var(--shadow-sm);
+    text-transform: uppercase;
+    font-size: 0.875rem !important;
+}
+
+.wp-block-button__link:hover,
+.themebutton:hover,
+button:hover,
+input[type="submit"]:hover {
+    background-color: var(--accent-hover) !important;
+    transform: translateY(-1px);
+    box-shadow: var(--shadow-md);
+}
+
+/* Secondary Button Style */
+.wp-block-button.is-style-outline .wp-block-button__link {
+    background-color: transparent !important;
+    border: 2px solid var(--accent-color) !important;
+    color: var(--accent-color) !important;
+}
+
+.wp-block-button.is-style-outline .wp-block-button__link:hover {
+    background-color: var(--accent-color) !important;
+    color: #ffffff !important;
+}
+
+/* Content Area */
+#content {
+    padding: var(--spacing-xl) 0;
+}
+
+/* Card Style for Sections */
+.wp-block-jetpack-layout-grid-column {
+    background-color: var(--surface-color);
+    padding: var(--spacing-lg);
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-sm);
+    border: 1px solid var(--border-color);
+    margin-bottom: var(--spacing-lg);
+}
+
+/* Footer Overrides */
+footer {
+    background-color: var(--primary-color) !important;
+    color: var(--surface-color) !important;
+    padding: var(--spacing-xl) 0;
+    margin-top: var(--spacing-xl);
+}
+
+#sub-footer {
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    padding-top: var(--spacing-md);
+}
+
+footer a {
+    color: var(--accent-color) !important;
+}
+
+footer a:hover {
+    color: var(--accent-secondary) !important;
+}
+
+/* Form Styles */
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-md);
+    background-color: var(--surface-color);
+    font-family: inherit;
+    margin-bottom: var(--spacing-sm);
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+textarea:focus {
+    outline: none;
+    border-color: var(--accent-color);
+    box-shadow: 0 0 0 3px rgba(14, 165, 233, 0.2);
+}
+
+/* Page Title Section */
+.page-title-section {
+    background-color: var(--primary-light);
+    color: #ffffff;
+    padding: 2rem 0;
+    text-align: center;
+    box-shadow: inset 0 -4px 6px -4px rgba(0, 0, 0, 0.1);
+}
+
+.page-title-section h1 {
+    margin: 0;
+    font-size: 2.5rem;
+    color: #ffffff;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+    font-weight: 800;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    :root {
+        --spacing-md: 1rem;
+        --spacing-lg: 1.5rem;
+        --spacing-xl: 2rem;
+    }
+
+    .wp-block-jetpack-layout-grid-column {
+        padding: var(--spacing-md);
+    }
+
+    .header-inner {
+        flex-wrap: wrap !important;
+        justify-content: center !important;
+        gap: 1rem !important;
+    }
+
+    .main-navigation ul.menu {
+        flex-wrap: wrap !important;
+        justify-content: center !important;
+        gap: 0.5rem !important;
+    }
+}
+
+/* Hero Slider */
+.hero-section {
+    position: relative;
+    height: 500px;
+    /* Match existing hero height */
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-slider {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+}
+
+.hero-slider .slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+.hero-slider .slide.active {
+    opacity: 1;
+}
+
+/* Ensure content sits above slider */
+.hero-section .container {
+    position: relative;
+    z-index: 1;
+}
+
+.hero-section .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4);
+    /* Dark overlay for text readability */
+    z-index: 1;
+}
