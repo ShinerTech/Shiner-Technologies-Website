@@ -1,6 +1,6 @@
 @font-face {
   font-family: 'crane-font';
-  src: url('/shinertech/wp-content/plugins/groovy-menu-free/assets/fonts/crane-font.woff') format("woff");
+  src: url('../../../../../wp-content/plugins/groovy-menu-free/assets/fonts/crane-font.woff') format("woff");
   font-weight: normal;
   font-style: normal;
   font-display: block; }

@@ -1964,7 +1964,7 @@ NAVBAR GENERAL STYLES
   content: '';
   display: block;
   height: 16px;
-  background-image: url('/shinertech/wp-content/plugins/groovy-menu-free/assets/images/gm-logo.svg');
+  background-image: url('../../../../../wp-content/plugins/groovy-menu-free/assets/images/gm-logo.svg');
   background-repeat: no-repeat;
   background-position: 50% 50%; }
 

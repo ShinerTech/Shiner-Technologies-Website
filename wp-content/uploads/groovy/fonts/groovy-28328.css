@@ -1,11 +1,11 @@
 
 @font-face {
 	font-family: 'groovy-28328';
-	src:url('/shinertech/wp-content/uploads/groovy/fonts/groovy-28328.eot');
-	src:url('/shinertech/wp-content/uploads/groovy/fonts/groovy-28328.eot') format('embedded-opentype'),
-		url('/shinertech/wp-content/uploads/groovy/fonts/groovy-28328.woff') format('woff'),
-		url('/shinertech/wp-content/uploads/groovy/fonts/groovy-28328.ttf') format('truetype'),
-		url('/shinertech/wp-content/uploads/groovy/fonts/groovy-28328.svg') format('svg');
+	src:url('../../../../wp-content/uploads/groovy/fonts/groovy-28328.eot');
+	src:url('../../../../wp-content/uploads/groovy/fonts/groovy-28328.eot') format('embedded-opentype'),
+		url('../../../../wp-content/uploads/groovy/fonts/groovy-28328.woff') format('woff'),
+		url('../../../../wp-content/uploads/groovy/fonts/groovy-28328.ttf') format('truetype'),
+		url('../../../../wp-content/uploads/groovy/fonts/groovy-28328.svg') format('svg');
 	font-weight: normal;
 	font-style: normal;
 	font-display: block;
