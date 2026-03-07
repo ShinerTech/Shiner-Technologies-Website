@@ -157,7 +157,7 @@ img {
 }
 
 .logo-row img {
-    max-height: 40px;
+    max-height: 50px;
     width: auto;
     object-fit: contain;
     /* Removed grayscale/opacity as requested */
