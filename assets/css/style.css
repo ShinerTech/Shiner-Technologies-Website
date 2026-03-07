@@ -115,13 +115,18 @@ img {
 }
 
 /* Navigation Overrides */
+.main-navigation ul.menu {
+    gap: 1rem !important;
+    /* Override inline gap to save space */
+}
+
 .main-navigation ul.menu li a {
     color: var(--text-color) !important;
     font-weight: 600 !important;
-    padding: 0.5rem 1rem !important;
-    /* Slightly more padding */
+    padding: 0.5rem 0.75rem !important;
+    white-space: nowrap;
+    /* Prevent "Web Design" from wrapping */
     border-radius: 20px !important;
-    /* Pill shape */
     transition: all 0.3s ease;
 }
 
@@ -362,4 +367,31 @@ textarea:focus {
     background: rgba(0, 0, 0, 0.4);
     /* Dark overlay for text readability */
     z-index: 1;
+}
+
+/* Custom Animations & Hover Effects */
+.service-card {
+    transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275), box-shadow 0.3s ease;
+}
+
+.service-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+}
+
+.showcase-card:hover {
+    transform: translateY(-12px) scale(1.03);
+    background: rgba(255, 255, 255, 0.12) !important;
+    border-color: rgba(255, 255, 255, 0.4) !important;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.25);
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
 }

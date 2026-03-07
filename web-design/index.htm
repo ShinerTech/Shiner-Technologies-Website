@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Web Design – Shiner Technologies LLC</title>
+    <link href="../assets/css/style.css" rel="stylesheet" type="text/css" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+</head>
+
+<body>
+    <!-- Header Component -->
+    <header id="header">
+        <div class="container">
+            <div class="header-inner"
+                style="display: flex; justify-content: space-between; align-items: center; padding: 1rem 0;">
+                <div id="logo">
+                    <a href="../index.htm" rel="home" style="text-decoration: none;">
+                        <img alt="Shiner Technologies LLC" src="../wp-content/uploads/2025/06/Capture.png" />
+                    </a>
+                </div>
+                <nav class="main-navigation">
+                    <ul class="menu" style="display: flex; list-style: none; gap: 1.5rem; margin: 0; padding: 0;">
+                        <li><a href="../index.htm">Home</a></li>
+                        <li><a href="../services/index.htm">Services</a></li>
+                        <li><a class="current" href="../web-design/index.htm">Web Design</a></li>
+                        <li><a href="../products/index.htm">Products</a></li>
+                        <li><a href="../support/index.htm">Support</a></li>
+                        <li><a href="../contact-about/index.htm">Contact</a></li>
+                        <li><a href="../blog/index.htm">Blog</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <!-- Page Title -->
+    <section class="page-title-section"
+        style="background-color: var(--primary-light); color: white; padding: 4rem 0; text-align: center;">
+        <div class="container">
+            <h1>Web Design & Development</h1>
+        </div>
+    </section>
+    <!-- Main Content -->
+    <main id="content">
+        <div class="container">
+            <!-- Intro -->
+            <div class="intro-text" style="text-align: center; max-width: 800px; margin: 0 auto 4rem;">
+                <p style="font-size: 1.25rem;">Transform your digital presence with modern, high-performance websites
+                    built for small businesses in the Upper Peninsula.</p>
+            </div>
+
+            <style>
+                .static-icon {
+                    display: block;
+                    margin: 0 auto 1.5rem;
+                    font-size: 3.5rem;
+                    color: white;
+                }
+
+                .grid-service-card {
+                    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+                }
+
+                .grid-service-card:hover {
+                    transform: translateY(-8px);
+                    border-color: rgba(255, 255, 255, 0.4);
+                    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+                    background: rgba(0, 0, 0, 0.4);
+                }
+
+                .grid-service-card p {
+                    font-size: 1.05rem;
+                    line-height: 1.6;
+                    color: #f8fafc;
+                    margin: 0;
+                }
+            </style>
+
+            <!-- Unified Premium Services Section -->
+            <section class="unified-services"
+                style="position: relative; padding: 4rem 2rem; margin-bottom: 4rem; border-radius: var(--radius-lg); background: linear-gradient(135deg, var(--primary-color) 0%, var(--primary-light) 100%); overflow: hidden; box-shadow: var(--shadow-lg);">
+
+                <!-- Shared Animated Background -->
+                <div
+                    style="position: absolute; top: -50%; left: -50%; width: 200%; height: 200%; background: radial-gradient(circle, rgba(14,165,233,0.1) 0%, transparent 50%); z-index: 0; animation: rotate 25s linear infinite;">
+                </div>
+
+                <!-- Part 1: Visual Showcase -->
+                <div style="position: relative; z-index: 1; margin-bottom: 5rem;">
+                    <div style="text-align: center;">
+                        <h2 style="color: white; margin-bottom: 1.5rem; font-size: 2.2rem;">Experience Modern Web Design
+                        </h2>
+                        <p style="font-size: 1.15rem; max-width: 750px; margin: 0 auto 3rem; color: #f8fafc;">A website
+                            is your
+                            digital storefront. We blend beautiful typography, fluid animations, and professional
+                            layouts to
+                            create engaging experiences that instantly demonstrate your credibility to clients.</p>
+                    </div>
+
+                    <div class="showcase-grid"
+                        style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem;">
+
+                        <div class="showcase-card"
+                            style="background: rgba(0,0,0,0.2); padding: 2.5rem 1.5rem; border-radius: var(--radius-lg); border: 1px solid rgba(255,255,255,0.2); backdrop-filter: blur(10px); transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);">
+                            <i class="fa fa-paint-brush static-icon" style="color: var(--accent-color);"></i>
+                            <h4 style="color: white; margin-bottom: 0.75rem; font-size: 1.3rem;">Bespoke Aesthetics</h4>
+                            <p style="font-size: 0.95rem; color: #94a3b8; line-height: 1.6;">Beautiful color palettes,
+                                modern glassmorphism UI elements, and tailored typography that match your brand identity
+                                perfectly.</p>
+                        </div>
+
+                        <div class="showcase-card"
+                            style="background: rgba(0,0,0,0.2); padding: 2.5rem 1.5rem; border-radius: var(--radius-lg); border: 1px solid rgba(255,255,255,0.2); backdrop-filter: blur(10px); transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);">
+                            <i class="fa fa-desktop static-icon" style="color: var(--accent-secondary);"></i>
+                            <h4 style="color: white; margin-bottom: 0.75rem; font-size: 1.3rem;">Responsive Layouts</h4>
+                            <p style="font-size: 0.95rem; color: #94a3b8; line-height: 1.6;">Silky-smooth scaling and
+                                fluid
+                                grids that look absolutely pixel-perfect on every device, from massive monitors to
+                                mobile
+                                phones.</p>
+                        </div>
+
+                        <div class="showcase-card"
+                            style="background: rgba(0,0,0,0.2); padding: 2.5rem 1.5rem; border-radius: var(--radius-lg); border: 1px solid rgba(255,255,255,0.2); backdrop-filter: blur(10px); transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);">
+                            <i class="fa fa-bolt static-icon" style="color: #fbbf24;"></i>
+                            <h4 style="color: white; margin-bottom: 0.75rem; font-size: 1.3rem;">Dynamic Interactions
+                            </h4>
+                            <p style="font-size: 0.95rem; color: #94a3b8; line-height: 1.6;">Engaging hover states,
+                                subtle
+                                micro-animations, and dynamic transitions that make your site feel premium and alive.
+                            </p>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- Divider -->
+                <div
+                    style="position: relative; z-index: 1; height: 1px; background: rgba(255,255,255,0.1); margin: 0 2rem 5rem 2rem;">
+                </div>
+
+                <!-- Part 2: Comprehensive Solutions -->
+                <div style="position: relative; z-index: 1;">
+                    <div style="text-align: center;">
+                        <h2 style="color: white; font-size: 2.2rem; margin-bottom: 0.5rem;">Comprehensive Solutions</h2>
+                        <p style="color: #cbd5e1; font-size: 1.15rem; max-width: 600px; margin: 0 auto 3.5rem;">
+                            Everything you need to dominate online, fully managed by local experts.</p>
+                    </div>
+
+                    <div class="services-grid"
+                        style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2rem; margin-bottom: 0;">
+
+                        <!-- Service 1 -->
+                        <div class="service-card grid-service-card"
+                            style="background: rgba(0,0,0,0.25); padding: 2.5rem 2rem; border-radius: var(--radius-lg); border: 1px solid rgba(255,255,255,0.15); backdrop-filter: blur(12px); text-align: center;">
+                            <i class="fa fa-rocket static-icon" style="color: #38bdf8;"></i>
+                            <h3 style="margin: 0 0 1rem 0; color: white; font-size: 1.4rem;">Hyper-Local Focus</h3>
+                            <p>Leveraging <b>Agentic AI Workflows</b> to deliver <b>High-Converting, Premium</b> digital
+                                experiences at breakneck speed for the U.P.</p>
+                        </div>
+
+                        <!-- Service 2 -->
+                        <div class="service-card grid-service-card"
+                            style="background: rgba(0,0,0,0.25); padding: 2.5rem 2rem; border-radius: var(--radius-lg); border: 1px solid rgba(255,255,255,0.15); backdrop-filter: blur(12px); text-align: center;">
+                            <i class="fa fa-shield static-icon" style="color: #4ade80;"></i>
+                            <h3 style="margin: 0 0 1rem 0; color: white; font-size: 1.4rem;">Zero-Trust Security</h3>
+                            <p>Fully static infrastructure means <b>Bulletproof DDoS Protection</b> and auto
+                                <b>SSL/HTTPS</b> encryption. Unhackable by design.
+                            </p>
+                        </div>
+
+                        <!-- Service 3 -->
+                        <div class="service-card grid-service-card"
+                            style="background: rgba(0,0,0,0.25); padding: 2.5rem 2rem; border-radius: var(--radius-lg); border: 1px solid rgba(255,255,255,0.15); backdrop-filter: blur(12px); text-align: center;">
+                            <i class="fa fa-tachometer static-icon" style="color: #fbbf24;"></i>
+                            <h3 style="margin: 0 0 1rem 0; color: white; font-size: 1.4rem;">SEO Dominance</h3>
+                            <p><b>Instant Page Loads</b> engineered for Peak Core Web Vitals. Brutally aggressive search
+                                optimization to <b>Outrank the Competition</b>.</p>
+                        </div>
+
+                        <!-- Service 4 -->
+                        <div class="service-card grid-service-card"
+                            style="background: rgba(0,0,0,0.25); padding: 2.5rem 2rem; border-radius: var(--radius-lg); border: 1px solid rgba(255,255,255,0.15); backdrop-filter: blur(12px); text-align: center;">
+                            <i class="fa fa-cogs static-icon" style="color: #a78bfa;"></i>
+                            <h3 style="margin: 0 0 1rem 0; color: white; font-size: 1.4rem;">Automated Delivery</h3>
+                            <p>Seamless <b>CI/CD Pipelines</b> and automated quality assurance ensure flawless code
+                                deployment and <b>Zero Downtime</b>.</p>
+                        </div>
+
+                        <!-- Service 5 -->
+                        <div class="service-card grid-service-card"
+                            style="background: rgba(0,0,0,0.25); padding: 2.5rem 2rem; border-radius: var(--radius-lg); border: 1px solid rgba(255,255,255,0.15); backdrop-filter: blur(12px); text-align: center;">
+                            <i class="fa fa-server static-icon" style="color: #f87171;"></i>
+                            <h3 style="margin: 0 0 1rem 0; color: white; font-size: 1.4rem;">Global Infrastructure</h3>
+                            <p>Hosted on <b>GitHub's Enterprise Edge Network</b>. Delivering <b>99.99% Node Uptime</b>
+                                with
+                                infinitely scalable bandwidth.</p>
+                        </div>
+
+                        <!-- Service 6 -->
+                        <div class="service-card grid-service-card"
+                            style="background: rgba(0,0,0,0.25); padding: 2.5rem 2rem; border-radius: var(--radius-lg); border: 1px solid rgba(255,255,255,0.15); backdrop-filter: blur(12px); text-align: center;">
+                            <i class="fa fa-globe static-icon" style="color: #2dd4bf;"></i>
+                            <h3 style="margin: 0 0 1rem 0; color: white; font-size: 1.4rem;">Turnkey Management</h3>
+                            <p>We handle the complex domains, DNS routing, and SSL renewals. Zero active maintenance
+                                translates to <b>100% Peace of Mind</b>.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Contact/Support Buttons -->
+            <div class="contact-buttons-grid"
+                style="display: flex; flex-direction: column; align-items: center; gap: 1rem; max-width: 600px; margin: 0 auto; text-align: center;">
+                <h3 style="margin-bottom: 0.5rem; color: var(--primary-color); font-size: 2.2rem;">Ready to Elevate Your
+                    Business?</h3>
+                <p style="color: var(--text-light); margin-bottom: 1.5rem; font-size: 1.15rem;">Let's build a fast,
+                    secure, and beautiful digital storefront for your company.</p>
+                <a class="themebutton" href="mailto:chris.shiner@shinertechnologies.com"
+                    style="background-color: var(--accent-secondary) !important; font-size: 1.25rem !important; padding: 1rem 3rem !important; border-radius: 50px !important; box-shadow: 0 10px 25px rgba(249, 115, 22, 0.4); text-align: center;">Email
+                    Us to Start Your Project</a>
+            </div>
+        </div>
+    </main>
+    <!-- Footer Component -->
+    <footer id="footer">
+        <div class="container">
+            <div class="footer-content"
+                style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem;">
+                <div class="footer-section">
+                    <h3>About Us</h3>
+                    <p>Shiner Technologies provides premier business-class technical systems and support in Michigan's
+                        Upper Peninsula.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul style="list-style: none; padding: 0;">
+                        <li><a href="../services/index.htm">Services</a></li>
+                        <li><a href="../web-design/index.htm">Web Design</a></li>
+                        <li><a href="../products/index.htm">Products</a></li>
+                        <li><a href="../support/index.htm">Support</a></li>
+                        <li><a href="../contact-about/index.htm">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact</h3>
+                    <p>Email: <a
+                            href="mailto:chris.shiner@shinertechnologies.com">chris.shiner@shinertechnologies.com</a>
+                    </p>
+                    <p>Phone: <a href="tel:9063322580">(906) 332-2580</a></p>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/ShinerTechnologies/" style="color: white; font-size: 1.5rem;"
+                            target="_blank"><i class="fa fa-facebook"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright"
+                style="text-align: center; margin-top: 2rem; padding-top: 1rem; border-top: 1px solid rgba(255,255,255,0.1);">
+                <p>© 2025 Shiner Technologies, LLC. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
