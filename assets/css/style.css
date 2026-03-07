@@ -314,6 +314,81 @@ textarea:focus {
         justify-content: center !important;
         gap: 0.5rem !important;
     }
+
+    /* Web Design Page Mobile Adjustments */
+    .page-title-section {
+        padding: 2rem 1rem !important;
+    }
+
+    .page-title-section h1 {
+        font-size: 1.8rem !important;
+    }
+
+    .unified-services {
+        padding: 2rem 1rem !important;
+        margin-bottom: 2rem !important;
+    }
+
+    .unified-services h2 {
+        font-size: 1.8rem !important;
+    }
+
+    .unified-services p {
+        font-size: 1rem !important;
+    }
+
+    .part-1-container {
+        margin-bottom: 3rem !important;
+    }
+
+    .section-divider {
+        margin: 0 0 3rem 0 !important;
+    }
+
+    .showcase-grid,
+    .services-grid {
+        grid-template-columns: 1fr !important;
+        gap: 1.25rem !important;
+    }
+
+    .showcase-card,
+    .grid-service-card {
+        padding: 1.5rem 1.25rem !important;
+        box-shadow: none !important;
+        transition: none !important;
+        backdrop-filter: none !important;
+        -webkit-backdrop-filter: none !important;
+        background: linear-gradient(145deg, rgba(255, 255, 255, 0.05) 0%, rgba(0, 0, 0, 0.3) 100%) !important;
+        border: 1px solid rgba(255, 255, 255, 0.1) !important;
+    }
+
+    .animated-bg {
+        display: none !important;
+        animation: none !important;
+    }
+
+    .showcase-card h4,
+    .service-card h3 {
+        font-size: 1.2rem !important;
+    }
+
+    .static-icon {
+        font-size: 2.5rem !important;
+        margin-bottom: 1rem !important;
+    }
+
+    .contact-buttons-grid h3 {
+        font-size: 1.8rem !important;
+    }
+
+    .contact-buttons-grid p {
+        font-size: 1rem !important;
+    }
+
+    .contact-buttons-grid .themebutton {
+        font-size: 1rem !important;
+        padding: 0.75rem 1.5rem !important;
+    }
 }
 
 /* Hero Slider */
