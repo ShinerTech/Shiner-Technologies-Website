@@ -532,3 +532,111 @@ textarea:focus {
         transform: rotate(360deg);
     }
 }
+
+/* Comparison Section Styles */
+.comparison-grid {
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    gap: 2rem;
+    align-items: center;
+    margin-top: 3rem;
+}
+
+.comparison-card {
+    background: var(--surface-color);
+    padding: 2.5rem;
+    border-radius: var(--radius-xl);
+    box-shadow: var(--shadow-lg);
+    border: 1px solid var(--border-color);
+    height: 100%;
+    transition: all 0.3s ease;
+}
+
+.comparison-card.github {
+    border-top: 5px solid var(--accent-color);
+    background: linear-gradient(to bottom right, #ffffff, #f0f9ff);
+}
+
+.comparison-card.wordpress {
+    border-top: 5px solid #64748b;
+    background: #f1f5f9;
+    opacity: 1;
+}
+
+.vs-divider {
+    font-size: 2rem;
+    font-weight: 900;
+    color: var(--text-light);
+    background: var(--border-color);
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    position: relative;
+    z-index: 2;
+}
+
+.comparison-list {
+    list-style: none;
+    padding: 0;
+    margin: 1.5rem 0 0;
+}
+
+.comparison-list li {
+    padding: 0.75rem 0;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+    display: flex;
+    align-items: flex-start;
+    gap: 0.75rem;
+}
+
+.comparison-list li:last-child {
+    border-bottom: none;
+}
+
+.comparison-list i {
+    margin-top: 0.25rem;
+}
+
+.comparison-list .fa-check-circle {
+    color: #10b981;
+}
+
+.comparison-list .fa-times-circle {
+    color: #ef4444;
+}
+
+.comparison-label {
+    font-weight: 700;
+    display: block;
+    margin-bottom: 0.25rem;
+    color: var(--primary-color);
+}
+
+@media (max-width: 992px) {
+    .comparison-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    .vs-divider {
+        margin: 0 auto;
+        width: 50px;
+        height: 50px;
+        font-size: 1.5rem;
+    }
+
+    .comparison-card.wordpress {
+        order: 3;
+    }
+
+    .vs-divider {
+        order: 2;
+    }
+
+    .comparison-card.github {
+        order: 1;
+    }
+}
