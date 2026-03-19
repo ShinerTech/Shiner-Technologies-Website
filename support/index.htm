@@ -107,11 +107,7 @@
 </div>
 <!-- Contact Form -->
 <div class="contact-form-container">
-<form action="https://shinertechnologies.com/support/" class="contact-form" method="post">
-<!-- Hidden fields to maintain legacy support if applicable -->
-<input name="contact-form-id" type="hidden" value="86"/>
-<input name="action" type="hidden" value="grunion-contact-form"/>
-<input name="contact-form-hash" type="hidden" value="065e9a669a89629e4675a0a87c6acbe64fc24ffb"/>
+<form id="support-form" class="contact-form">
 <div class="form-group">
 <label for="g86-name">Name <span style="color:red">*</span></label>
 <input id="g86-name" name="g86-name" required="" type="text"/>
@@ -185,6 +181,18 @@
 <p>© 2025 Shiner Technologies, LLC. All Rights Reserved.</p>
 </div>
 </div>
+<script>
+	document.getElementById('support-form').addEventListener('submit', function(e) {
+		e.preventDefault();
+		const name = document.getElementById('g86-name').value;
+		const email = document.getElementById('g86-email').value;
+		const message = document.getElementById('g86-message').value;
+		const subject = encodeURIComponent('Support Request from ' + name);
+		const body = encodeURIComponent('Name: ' + name + '\nEmail: ' + email + '\n\nMessage:\n' + message);
+		const mailtoUrl = 'mailto:info@shinertechnologies.com?subject=' + subject + '&body=' + body;
+		window.location.href = mailtoUrl;
+	});
+</script>
 </footer>
 </body>
 </html>
