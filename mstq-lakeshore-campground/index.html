@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Support Ticket | Manistique Lakeshore Campground</title>
+    <meta name="robots" content="noindex, nofollow">
+    <meta name="description" content="Submit a help ticket to Shiner Technologies for any issues at the Manistique Lakeshore Campground.">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="background-effects"></div>
+    
+    <main class="container">
+        <header class="header">
+            <div class="logo">
+                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-tent"><path d="M12 2L2 22h20L12 2z"></path><path d="M12 15l-3 7"></path><path d="M12 15l3 7"></path></svg>
+            </div>
+            <h1>Manistique Lakeshore</h1>
+            <p class="subtitle">Camper Support Portal</p>
+        </header>
+
+        <section class="form-wrapper">
+            <form id="ticketForm" class="ticket-form">
+                <div class="form-group">
+                    <label for="fullName">Full Name</label>
+                    <input type="text" id="fullName" name="fullName" required placeholder="John Doe">
+                    <div class="focus-border"></div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group half-width">
+                        <label for="campsite">Campsite Number</label>
+                        <input type="text" id="campsite" name="campsite" required placeholder="e.g. A-12">
+                        <div class="focus-border"></div>
+                    </div>
+
+                    <div class="form-group half-width">
+                        <label for="issueType">Issue Type</label>
+                        <select id="issueType" name="issueType" required>
+                            <option value="" disabled selected>Select an issue...</option>
+                            <option value="power">Power Outage</option>
+                            <option value="water">Water/Plumbing</option>
+                            <option value="wifi">Wi-Fi/Internet</option>
+                            <option value="noise">Noise Complaint</option>
+                            <option value="other">Other</option>
+                        </select>
+                        <div class="focus-border"></div>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="description">Issue Description</label>
+                    <textarea id="description" name="description" rows="4" required placeholder="Please describe the issue in detail..."></textarea>
+                    <div class="focus-border"></div>
+                </div>
+
+                <button type="submit" class="submit-btn">
+                    <span>Submit Ticket</span>
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
+                </button>
+            </form>
+
+            <div id="successMessage" class="success-message hidden">
+                <div class="success-icon">
+                    <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+                </div>
+                <h2>Ticket Submitted!</h2>
+                <p>We've received your request and will address it shortly.</p>
+                <button id="newTicketBtn" class="secondary-btn">Submit Another Ticket</button>
+            </div>
+        </section>
+
+        <footer class="footer">
+            <p>Managed with <span class="heart">❤</span> by <strong>Shiner Technologies</strong></p>
+        </footer>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

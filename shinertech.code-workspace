@@ -2,6 +2,9 @@
 	"folders": [
 		{
 			"path": "."
+		},
+		{
+			"path": "../../../Shiner/MSTQ Campground Ticket"
 		}
 	],
 	"settings": {}
